@@ -1,0 +1,15 @@
+$default-font: ('PT Sans', sans-serif, 'PT Sans');
+$heading-font: ('Raleway', sans-serif, 'Raleway');
+
+body {
+  font-family: $default-font;
+}
+h1, h2, h3 {
+  font-family: $heading-font;
+}
+p {
+  font-family: $default-font;
+}
+h2 {
+  font-style: italic;
+}
