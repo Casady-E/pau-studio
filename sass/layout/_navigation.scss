@@ -75,8 +75,8 @@ $dropDown       : true;
           .nav-link{
             color: #ffffff;
             &:hover {
-              background-color:$darker-color;
-              color: $second-color;
+              background-color:$second-color;
+              color: #ffffff;
             }
           }
         }
