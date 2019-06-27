@@ -13,6 +13,9 @@ $dropDown       : true;
   z-index: 1500;
   color: #000000;
   padding: 0 2rem;
+  border-bottom-color: #ffffff;
+  border-bottom-width: 1vh;
+  border-bottom-style: solid;
   .navbar-brand {
     padding: 0.5em;
     color: $navDefault;
@@ -76,8 +79,6 @@ $dropDown       : true;
   .navbar-toggler {
     border-width: 0px;
     border-color: #CACACA;
-    -webkit-transition: all .5s;
-  transition: all .5s;
     .navbar-toggler-icon {
       border-color: #CACACA;
 
@@ -85,17 +86,16 @@ $dropDown       : true;
 
         border-color: #CACACA;}
     }
-      }
+  }
   .navbar-collapse,
   .navbar-form {
+    -webkit-transition: all .5s;
+  transition: all .5s;
     border-color: $navDefault; }
   .navbar-link {
     color: $navDefault;
     &:hover {
       color: $navHighlight; }}}
-
-
-
 
 
 
