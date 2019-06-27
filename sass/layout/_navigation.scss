@@ -5,21 +5,14 @@ $dropDown       : true;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: fixed;
+  position: static;
   background-color: #ffffff;
-  width: 95%;
+  width: 100%;
   text-align: center;
-  top: 0;
-  left: 0;
-  right: 0;
-  margin: 1rem auto;
-  margin-bottom: 0;
-  border-bottom: 2px;
+  margin: 0;
   z-index: 1500;
   color: #000000;
-  padding: 0rem 2rem;
-  -webkit-box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.50);
-  box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.50);
+  padding: 0 2rem;
   .navbar-brand {
     padding: 0.5em;
     color: $navDefault;
@@ -44,15 +37,14 @@ $dropDown       : true;
       margin: 0em;
       padding: 1.5em 1.5em;
       text-align: center;
-      -webkit-transition-property: background-color color;
-      transition-property: background-color color;
-      -webkit-transition-duration: 0.5s;
-              transition-duration: 0.5s;
-      -webkit-transition-timing-function: ease-in;
-              transition-timing-function: ease-in;
       &:not(.disabled) {
         &:hover, &:focus {
-
+          -webkit-transition-property: background-color color;
+          transition-property: background-color color;
+          -webkit-transition-duration: 0.5s;
+                  transition-duration: 0.5s;
+          -webkit-transition-timing-function: ease-in;
+                  transition-timing-function: ease-in;
           color: #ffffff;
         background-color: $second-color;
        }}}
@@ -103,46 +95,48 @@ $dropDown       : true;
       color: $navHighlight; }}}
 
 
-/*
 
-.large-nav{
+
+
+
+.navbar.sticky.is-sticky {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  .navbar-toggler {
-    background-color: $main-color;
-  }
-
-
-}
-.large-nav.sticky.is-sticky {
-  opacity: 1;
   position: fixed;
+  background-color: #ffffff;
+  width: 95%;
+  text-align: center;
+  top: 0;
   left: 0;
   right: 0;
-  top: 0;
-  z-index: 1000;
-  width: 100%;
-  -webkit-box-shadow: 0px 10px 35px -4px rgba(0,0,0,0.75);
-    box-shadow: 0px 10px 35px -4px rgba(0,0,0,0.75);
-    background-color: #ffffff;
-  padding: 0.5rem 1rem;
-    .nav-link {
-      color: #000000;
-      font-size: 1em;
-      margin: 0 1em;
+  margin: 1rem auto 0 auto;
+  margin-bottom: 0;
+  border-bottom: 2px;
+  z-index: 1500;
+  color: #000000;
+  padding: 0rem 2rem;
+  -webkit-box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.50);
+  box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.50);
+  -webkit-transition: all .5s;
+transition: all .5s;
+    .nav-cta{
+      background-color: $main-color;
+      .nav-link{
+        color: #ffffff;
+        &:hover {
+          background-color:$second-color;
+          color: #ffffff;
+        }
+      }
     }
-  .navbar-brand {
-    img{
-      max-width: 3em;
-    }
-}
+
 .navbar-toggler {
   background-color: #ffffff;
 }
 }
 
-*/
+
 @include respond-to('small') {
   .navbar-expend-sm .navbar-nav .show .dropdown-menu {
     .dropdown-item {
