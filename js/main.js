@@ -13,11 +13,11 @@ $(document).ready(function() {
   var stickyToggle = function(sticky, stickyWrapper, scrollElement) {
     var stickyHeight = sticky.outerHeight();
     var stickyTop = stickyWrapper.offset().top;
-    if (scrollElement.scrollTop() >= stickyTop){
+    if (scrollElement.scrollTop() > stickyTop){
       stickyWrapper.height(stickyHeight);
       sticky.addClass("is-sticky");
     }
-    else{
+    else if (scrollElement.scrollTop() == stickyTop){
       sticky.removeClass("is-sticky");
       stickyWrapper.height('auto');
     }
@@ -36,7 +36,7 @@ $(document).ready(function() {
     });
 
     // On page load
-    stickyToggle(sticky, stickyWrapper, $(window));
+
   });
 });
 
