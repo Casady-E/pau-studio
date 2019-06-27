@@ -3,7 +3,17 @@
   margin-top: 0;
   padding-top: 0;
   height: 80vh;
-.row{
-  margin-top: 0;
-  padding-top: 0;
-}}
+  width: 100vw;
+  .intro-text{
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    padding-top: 30vh;
+    color: #ffffff;
+    z-index: 2;
+    @include breakpoint (small){
+      padding: 0em;
+    }
+}
+}
