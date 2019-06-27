@@ -4,16 +4,22 @@
   padding-top: 0;
   height: 80vh;
   width: 100vw;
-  .intro-text{
-    text-align: center;
+  .intro-container{
+    text-align: left;
     margin: auto;
     width: 100%;
     height: 100%;
     padding-top: 30vh;
     color: #ffffff;
     z-index: 2;
-    @include breakpoint (small){
-      padding: 0em;
+    .intro-text {
+      margin-bottom: 5vh;
+    }
+    .intro-link {
+      text-align: center;
+      color: #ffffff;
+      padding: 2vh 2vw;
+      background-color: $second-color;
     }
 }
 }
