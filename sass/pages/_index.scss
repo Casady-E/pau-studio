@@ -2,20 +2,25 @@
   background-color: $main-color;
   margin-top: 0;
   padding-top: 0;
-  height: 80vh;
+  height: 60vh;
   width: 100vw;
   .intro-container{
     text-align: left;
     margin: auto;
     width: 100%;
     height: 100%;
-    padding-top: 30vh;
+    padding-top: 20vh;
     color: #ffffff;
     z-index: 2;
     .intro-text {
+      font-weight: 700;
+      font-size: 3em;
       margin-bottom: 5vh;
+      right:0;
+      left:0;
     }
     .intro-link {
+      font-size: 1.5em;
       text-align: center;
       color: #ffffff;
       padding: 2vh 2vw;
