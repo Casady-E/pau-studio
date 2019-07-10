@@ -29,6 +29,32 @@
     }
 }
 }
+.intro-sell{
+  height: relative;
+  width: 90%;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  margin: auto;
+  .intro-sell-desc{
+    height: 100%;
+    margin: auto;
+  }
+  .intro-sell-triple{
+    .triple-item{
+      img{
+        width: inherit;
+        max-width: 50vw;
+        position: absolute;
+        margin: auto;
+        @include aspect-ratio(16, 9);
+      }
+      a{
+        color:$second-color;
+      }
+    }
+  }
+}
+
 .intro-services{
   height: relative;
   width: 90%;
