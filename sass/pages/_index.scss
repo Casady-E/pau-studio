@@ -200,5 +200,23 @@
     padding: 5vh 2.5vw 0 2.5vw;
     color: #ffffff;
   }
+  .case-study-image{
+    width: 100%;
+    height: inherit;
+    margin: auto;
+    margin-bottom: 10vh;
+    overflow: hidden;
+    text-align: center;
+    img {
+      width: inherit;
+      max-width: 25vw;
+      position: absolute;
+      margin: auto;
+      @include aspect-ratio(16, 9);
+      @include breakpoint(medium){
+        max-width: 40vw;
+      }
+    }
+  }
 }
 }
