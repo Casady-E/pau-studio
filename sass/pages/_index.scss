@@ -220,3 +220,42 @@
   }
 }
 }
+.intro-client-list{
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 10vh;
+  h3{
+    text-align: center;
+    margin-bottom: 10vh;
+    font-size: 3em;
+  }
+  .slide{
+    img{
+      min-width: 25vw;
+      max-width: 25vw;
+    }
+  }
+  /*
+  .client-icon{
+    width: 100%;
+    height: inherit;
+    margin: auto;
+    margin-bottom: 10vh;
+    overflow: hidden;
+    text-align: center;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    img{
+      width: inherit;
+      max-width: 30vw;
+      position: absolute;
+      margin: auto;
+      @include aspect-ratio(16, 9);
+      @include breakpoint(medium){
+        max-width: 40vw;
+      }
+    }
+  } */
+}
