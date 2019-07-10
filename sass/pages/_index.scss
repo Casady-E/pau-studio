@@ -165,3 +165,40 @@
     }
   }
 }
+.intro-case-study{
+  width: 80%;
+  margin: auto;
+  margin-bottom: 20vh;
+  h2{
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 5vh;
+  }
+.case-study-body{
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+.case-study-item{
+  margin: auto;
+  overflow: hidden;
+  border-radius: 25px;
+  max-height: 60vh;
+  background-color: $second-color;
+  text-align: left;
+  margin-bottom: 5vh;
+  &:hover{
+    max-height: 70vh;
+    -webkit-transition-property: max-height;
+    transition-property: max-height;
+    -webkit-transition-duration: 0.25s;
+            transition-duration: 0.25s;
+    -webkit-transition-timing-function: ease-in;
+            transition-timing-function: ease-in;
+  }
+  .case-study-desc{
+    padding: 5vh 2.5vw 0 2.5vw;
+    color: #ffffff;
+  }
+}
+}
