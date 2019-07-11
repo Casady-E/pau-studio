@@ -90,8 +90,8 @@ $(document).ready(function(){
     autoplay: true,
     autoplaySpeed: 3000,
     arrows: false,
-    dots: false,
-    pauseOnHover: false,
+    dots: true,
+    pauseOnHover: true,
     responsive: [{
       breakpoint: 768,
       settings: {
