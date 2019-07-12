@@ -29,6 +29,23 @@
     }
 }
 }
+.intro-about{
+  height: relative;
+  width: 100%;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  .intro-about-desc{
+    width: 100%;
+    margin: auto;
+    h2{
+      font-weight: 700;
+      font-size: 2.5em;
+    }
+    p{
+      font-size: 1.25em;
+    }
+  }
+}
 .intro-sell{
   height: relative;
   width: 100%;
