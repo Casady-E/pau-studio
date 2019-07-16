@@ -95,12 +95,12 @@ $(document).ready(function(){
     responsive: [{
       breakpoint: 768,
       settings: {
-        slidesToShow: 3
+        slidesToShow: 2
       }
     }, {
       breakpoint: 520,
       settings: {
-        slidesToShow: 3
+        slidesToShow: 2
       }
     }]
   });
