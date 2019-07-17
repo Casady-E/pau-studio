@@ -206,7 +206,7 @@
   width: 100%;
   padding: 10vh 0;
   background-color: #333333;
-  margin-bottom: 10vh; 
+  margin-bottom: 10vh;
   .intro-cta-contatiner{
     width: 100%;
     margin:auto;
@@ -274,6 +274,9 @@
             transition-duration: 0.25s;
     -webkit-transition-timing-function: ease-in;
             transition-timing-function: ease-in;
+  }
+  a{
+    text-decoration: none;
   }
   .case-study-desc{
     padding: 5vh 2.5vw 0 2.5vw;
