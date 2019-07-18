@@ -1,0 +1,21 @@
+.services-head {
+  background-color: #000;
+  height: auto;
+  max-height: 80vh;
+  width: 100%;
+  padding: 25vh 10vw;
+  overflow: hidden;
+  z-index: 2;
+  overflow: hidden;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.25)), to(rgba(0, 0, 0, 0.25))), url(../img/pineapple-bg.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../img/pineapple-bg.jpg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  @include breakpoint(small){
+    background-size: auto 120%;
+  }
+  @include breakpoint(large){
+    max-height: 90vh;
+    padding: 30vh 10vw;
+  }
+  }
