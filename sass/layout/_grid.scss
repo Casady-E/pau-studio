@@ -10,16 +10,16 @@ $breakpoints: (
      @media (min-width: 70em) { @content ; }
   }
    @else if $point == large {
-     @media (min-width: 64em) { @content ; }
+     @media (min-width: 1200px) { @content ; }
   }
     @else if $point == medium {
-     @media (max-width: 64em) { @content ; }
+     @media (max-width: 1199px) { @content ; }
   }
    @else if $point == small {
-     @media (max-width: 50em) { @content ; }
+     @media (max-width: 991px) { @content ; }
   }
   @else if $point == xsmall {
-     @media (max-width: 37.5em)  { @content ; }
+     @media (max-width: 767px)  { @content ; }
 
   }
 }
