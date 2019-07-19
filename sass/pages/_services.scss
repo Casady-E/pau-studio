@@ -1,21 +1,83 @@
-.services-head {
-  background-color: #000;
+.service-head {
+  background-color: $main-color;
   height: auto;
   max-height: 80vh;
   width: 100%;
-  padding: 25vh 10vw;
+  padding: 10vh 5vw;
   overflow: hidden;
   z-index: 2;
-  overflow: hidden;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.25)), to(rgba(0, 0, 0, 0.25))), url(../img/pineapple-bg.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../img/pineapple-bg.jpg);
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-  @include breakpoint(small){
-    background-size: auto 120%;
+  color: #ffffff
   }
-  @include breakpoint(large){
-    max-height: 90vh;
-    padding: 30vh 10vw;
+  .service-intro{
+    padding: 10vh 5vw;
+    width: 100%;
+    h2{
+      font-weight: 700;
+      font-size: 3em;
+      margin-bottom: 5vh;
+    }
+    .service-intro-link {
+      font-size: 1.5em;
+      text-align: left;
+      color: #ffffff;
+      padding: 2vh 2vw;
+      background-color: $second-color;
+      border-radius: 25px;
+      &:hover{
+      text-decoration: none;
+      -webkit-box-shadow: 0px 10px 0px 0px rgba(142,106,186,1);
+      box-shadow: 0px 10px 0px 0px rgba(142,106,186,1);
+    }
+    }
   }
+  .service-item-container{
+    padding: 0;
+    .service-item{
+      width: 100%;
+      display: -webkit-inline-box;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      @include breakpoint(xsmall){
+        display: block;
+      }
+      .service-desc{
+        padding: 5vw 5vh;
+      h3{
+        font-size: 2.5em;
+        @include breakpoint(xsmall){
+          margin-top: 5vh;
+        }
+      }
+      hr{
+        border-width: 5px;
+        width: 25%;
+        margin:0;
+        margin-bottom: 2.5vh;
+      }
+      p{
+        font-size: 1em;
+      }
+    }
+      .service-image{
+        width: 100%;
+        padding: 0;
+      img{
+        width: inherit;
+      }
+    }
+    }
+    .service-item-lg{
+      display: -webkit-inline-box;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      @include breakpoint(xsmall){
+        display: none;
+      }
+    }
+    .service-item-sm{
+      display: none;
+      @include breakpoint(xsmall){
+        display: block;
+      }
+    }
   }
