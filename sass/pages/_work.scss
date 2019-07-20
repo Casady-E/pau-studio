@@ -8,3 +8,101 @@
   z-index: 2;
   color: #ffffff
   }
+
+  .work-case-study{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20vh;
+    margin-top: 10vh;
+  .case-study-head{
+    margin-bottom: 5vh;
+    text-align: center;
+    h2{
+      font-size: 3em;
+      text-align: center;
+      font-weight: 700;
+    }
+    a{
+      text-decoration: none;
+      color: $main-color;
+      &:hover{
+        color: $second-color;
+      }
+    }
+  }
+  .case-study-body{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+  }
+  .case-study-item{
+    margin: auto;
+    overflow: hidden;
+    border-radius: 25px;
+    max-height: 60vh;
+    background-color: $second-color;
+    text-align: left;
+    margin-bottom: 5vh;
+    &:hover{
+      max-height: 70vh;
+      -webkit-transition-property: max-height;
+      transition-property: max-height;
+      -webkit-transition-duration: 0.25s;
+              transition-duration: 0.25s;
+      -webkit-transition-timing-function: ease-in;
+              transition-timing-function: ease-in;
+    }
+    a{
+      text-decoration: none;
+    }
+    .case-study-desc{
+      padding: 5vh 2.5vw 0 2.5vw;
+      color: #ffffff;
+    }
+    .case-study-image{
+      width: 100%;
+      height: inherit;
+      margin: auto;
+      margin-bottom: 10vh;
+      overflow: hidden;
+      text-align: center;
+      img {
+        width: inherit;
+        max-width: 25vw;
+        position: absolute;
+        margin: auto;
+        @include aspect-ratio(16, 9);
+        @include breakpoint(medium){
+          max-width: 40vw;
+        }
+      }
+    }
+  }
+  }
+
+  .portfolio{
+    width: 100%;
+    height: auto;
+    margin-bottom: 10vh;
+    .portfolio-head{
+      text-align: center;
+      margin-bottom: 5vh;
+      h2{
+        font-size: 3em;
+        font-weight: 700;
+      }
+    }
+    .portfolio-body{
+      width: 100%;
+      margin:auto;
+      padding: 0 5vw;
+    .portfolio-item{
+      width: 100%;
+      overflow: hidden;
+      padding: 0 -2.5vw 0 2.5vw;
+      height: 40vh;
+      margin: auto;
+      margin-bottom: 2.5vh;
+    }
+  }
+}
