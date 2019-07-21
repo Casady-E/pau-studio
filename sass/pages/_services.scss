@@ -52,12 +52,13 @@
         }
       h3{
         font-size: 2.5em;
+        color: $main-color;
         @include breakpoint(xsmall){
           margin-top: 5vh;
         }
       }
       hr{
-        border-color: #000000;
+        border-color: $second-color;
         border-width: 5px;
         width: 25%;
         margin:0;
@@ -91,34 +92,4 @@
         display: block;
       }
     }
-  }
-  .service-cta{
-    width: 100%;
-    padding: 10vh 0;
-    background-color: #3d3d3e;
-    .service-cta-contatiner{
-      width: 100%;
-      margin:auto;
-      text-align: center;
-      h2{
-        color: #ffffff;
-        font-size: 3em;
-        font-weight: 700;
-        margin-bottom: 5vh;
-      }
-  .service-cta-link {
-    font-size: 1.5em;
-    text-align: left;
-    color: #ffffff;
-    padding: 2vh 2vw;
-    background-color: $second-color;
-    border-radius: 25px;
-    margin-bottom: 5vh;
-    &:hover{
-    text-decoration: none;
-    -webkit-box-shadow: 0px 10px 0px 0px rgba(142,106,186,1);
-    box-shadow: 0px 10px 0px 0px rgba(142,106,186,1);
-  }
-  }
-  }
   }

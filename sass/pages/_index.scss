@@ -217,41 +217,10 @@
   }
 }
 
-.intro-cta{
-  width: 100%;
-  padding: 10vh 0;
-  background-color: #333333;
-  margin-bottom: 10vh;
-  .intro-cta-contatiner{
-    width: 100%;
-    margin:auto;
-    text-align: center;
-    h2{
-      color: #ffffff;
-      font-size: 3em;
-      font-weight: 700;
-      margin-bottom: 5vh;
-    }
-.intro-cta-link {
-  font-size: 1.5em;
-  text-align: left;
-  color: #ffffff;
-  padding: 2vh 2vw;
-  background-color: $second-color;
-  border-radius: 25px;
-  margin-bottom: 5vh;
-  &:hover{
-  text-decoration: none;
-  -webkit-box-shadow: 0px 10px 0px 0px rgba(142,106,186,1);
-  box-shadow: 0px 10px 0px 0px rgba(142,106,186,1);
-}
-}
-}
-}
-
 .intro-case-study{
   width: 80%;
   margin: auto;
+  margin-top: 10vh;
   margin-bottom: 20vh;
 .case-study-head{
   margin-bottom: 5vh;
@@ -260,6 +229,7 @@
     font-size: 3em;
     text-align: center;
     font-weight: 700;
+    color: $main-color;
   }
   a{
     text-decoration: none;
