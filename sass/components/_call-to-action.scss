@@ -1,0 +1,30 @@
+.cta{
+  width: 100%;
+  padding: 10vh 0;
+  background-color: #3d3d3e;
+  .cta-contatiner{
+    width: 100%;
+    margin:auto;
+    text-align: center;
+    h2{
+      color: #ffffff;
+      font-size: 3em;
+      font-weight: 700;
+      margin-bottom: 5vh;
+    }
+.cta-link {
+  font-size: 1.5em;
+  text-align: left;
+  color: #ffffff;
+  padding: 2vh 2vw;
+  background-color: $second-color;
+  border-radius: 25px;
+  margin-bottom: 5vh;
+  &:hover{
+  text-decoration: none;
+  -webkit-box-shadow: 0px 10px 0px 0px rgba(142,106,186,1);
+  box-shadow: 0px 10px 0px 0px rgba(142,106,186,1);
+}
+}
+}
+}
