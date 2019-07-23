@@ -8,8 +8,8 @@
 #return-to-top {
   display: none;
   position: fixed;
-  bottom: 15vh;
-  right: 1vw;
+  bottom: 5vh;
+  left: 1vw;
   z-index: 99;
   font-size: 1.5em;
   border: none;
@@ -21,6 +21,18 @@
   border-radius: 25px;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
+  @include breakpoint(medium){
+    bottom: 2vh;
+  }
+  @include breakpoint(small){
+    padding: 2vh 2vw;
+    bottom: 2vh;
+  }
+  @include breakpoint(xsmall){
+    padding: 2vh 2vw;
+    left: 5vw;
+    bottom: 2vh;
+  }
 }
 
 #return-to-top:hover {
