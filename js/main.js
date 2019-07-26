@@ -1,5 +1,3 @@
-
-
 // Anchor Links
 $(document).ready(function(){
 var shiftWindow = function() { scrollBy(0, -50) };
@@ -80,28 +78,3 @@ function topFunction() {
 window.sr = ScrollReveal();
 sr.reveal('.reveal', { duration: 2000 });
 sr.reveal('.about-item', { duration: 500 }, 25);
-
-
-//Slick Slider
-$(document).ready(function(){
-  $('.customer-logos').slick({
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    arrows: false,
-    dots: true,
-    pauseOnHover: true,
-    responsive: [{
-      breakpoint: 768,
-      settings: {
-        slidesToShow: 2
-      }
-    }, {
-      breakpoint: 520,
-      settings: {
-        slidesToShow: 2
-      }
-    }]
-  });
-});
