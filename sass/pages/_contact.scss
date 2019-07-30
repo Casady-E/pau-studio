@@ -1,3 +1,15 @@
+.contact-head{
+  margin: 5vh auto;
+  width: 100%;
+  text-align: center;
+  h2{
+    font-size: 2.5em;
+    strong{
+      font-weight: 700;
+      color: $main-color;
+    }
+  }
+}
 .contact-form{
-  padding: 10vh 5vw 10vh 5vw;
+  padding: 0 5vw 10vh 5vw;
 }
