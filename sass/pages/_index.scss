@@ -69,6 +69,10 @@
   .intro-sell-desc{
     height: 100%;
     margin: auto;
+    h3{
+      font-weight: 700;
+      font-size: 2em;
+    }
   }
   .intro-sell-triple{
     .triple-item{
@@ -81,6 +85,10 @@
       }
       a{
         color:$second-color;
+        &:hover{
+          color: $lighter-color;
+          text-decoration: none;
+        }
       }
     }
   }
@@ -124,6 +132,18 @@
     border-width: thin;
     border-color: #CACACA;
     z-index: 1;
+    .services-button{
+      font-size: 1.5em;
+      text-align: center;
+      color: $second-color;
+      margin: 0 5vh 0 5vh;
+      margin-top: 5vh;
+      padding: 2.5vh 1vw;
+        border-radius: 25px;
+      @include breakpoint(small){
+        margin-top: 2vh
+      }
+    }
     &:hover {
       -webkit-transition-property: -webkit-box-shadow;
       transition-property: box-shadow, -webkit-box-shadow;
@@ -138,16 +158,10 @@
       .services-button{
         background-color: $second-color;
         color: #ffffff;
-        border-radius: 25px;
         -webkit-box-shadow: 0px 10px 0px 0px rgba(142,106,186,1);
         box-shadow: 0px 10px 0px 0px rgba(142,106,186,1);
         &:hover{
           background-color: $darker-color;
-        }
-        @include breakpoint(small){
-          margin: 0 15vh 0 15vh;
-          margin-top: 5vh;
-          margin-bottom: 2vh;
         }
       }
     }
@@ -202,17 +216,6 @@
       font-size: 1.5em;
       padding-top: 3vh;
       z-index: 2;
-      @include breakpoint(small){
-        margin-top: 2vh
-      }
-    }
-    .services-button{
-      font-size: 1.5em;
-      text-align: center;
-      color: $second-color;
-      margin: 0 5vh 0 5vh;
-      margin-top: 5vh;
-      padding: 2.5vh 1vw;
       @include breakpoint(small){
         margin-top: 2vh
       }
