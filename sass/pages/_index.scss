@@ -34,11 +34,11 @@
       padding: 2vh 2vw;
       background-color: $second-color;
       border-radius: 25px;
-      -webkit-box-shadow: 0px 10px 0px 0px rgba(142,106,186,1);
-      box-shadow: 0px 10px 0px 0px rgba(142,106,186,1);
+      -webkit-box-shadow: 0px 10px 0px 0px #3865a9;
+              box-shadow: 0px 10px 0px 0px #3865a9;
       &:hover{
       text-decoration: none;
-      background-color: $darker-color;
+      background-color: #274675;
     }
     }
 }
@@ -76,9 +76,10 @@
   }
   .intro-sell-triple{
     .triple-item{
+      margin-bottom: 5vh;
       img{
-        width: inherit;
-        max-width: 50vw;
+        width: auto;
+        max-height: 15vh;
         position: absolute;
         margin: auto;
         @include aspect-ratio(16, 9);
@@ -158,10 +159,10 @@
       .services-button{
         background-color: $second-color;
         color: #ffffff;
-        -webkit-box-shadow: 0px 10px 0px 0px rgba(142,106,186,1);
-        box-shadow: 0px 10px 0px 0px rgba(142,106,186,1);
+        -webkit-box-shadow: 0px 10px 0px 0px #3865a9;
+                box-shadow: 0px 10px 0px 0px #3865a9;
         &:hover{
-          background-color: $darker-color;
+          background-color: #274675;
         }
       }
     }
@@ -199,12 +200,13 @@
       opacity: 1;
       overflow: hidden;
       img{
-        width: inherit;
-        max-width: 50vw;
+        width: 20vw;
         position: absolute;
         margin: auto;
         @include aspect-ratio(16, 9);
-
+        @include breakpoint(xsmall){
+          width: 30vw;
+        }
       }
     }
     .service-desc{
@@ -254,12 +256,12 @@
   margin: auto;
   overflow: hidden;
   border-radius: 25px;
-  max-height: 60vh;
+  height: 60vh;
   background-color: $second-color;
   text-align: left;
   margin-bottom: 5vh;
   &:hover{
-    max-height: 70vh;
+    height: 70vh;
     -webkit-transition-property: max-height;
     transition-property: max-height;
     -webkit-transition-duration: 0.25s;
@@ -293,6 +295,22 @@
     }
   }
 }
+#case-study-1{
+  background-color: rgb(142,106,186);
+  background: linear-gradient(195deg, #fbb1b1 0%, #ff6262 100%);
+}
+#case-study-2{
+  background-color: rgb(142,106,186);
+  background: linear-gradient(195deg, #62a7fb 0%, #32569e 100%);
+}
+#case-study-3{
+  background-color: rgb(142,106,186);
+  background: linear-gradient(195deg, #c15353 0%, #671726 100%);
+}
+#case-study-4{
+  background-color: rgb(142,106,186);
+  background: linear-gradient(195deg, #ffa857 0%, #e07726 100%);
+}
 }
 .intro-client-list{
   width: 100%;
@@ -323,7 +341,8 @@
       position: absolute;
       margin: auto;
       @include aspect-ratio(16, 9);
-      @include breakpoint(medium){
+      @include breakpoint(xsmall){
+        width: 40vw;
         max-width: 40vw;
       }
     }
