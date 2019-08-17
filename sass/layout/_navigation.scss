@@ -34,6 +34,9 @@ $dropDown       : true;
         color: $navHighlight; }}}
   .navbar-nav {
     height: inherit;
+   .nav-item.active .nav-link{
+      background-color: $second-color;
+    }
     .nav-link {
       color: #000000;
       font-size: 1em;
@@ -50,7 +53,9 @@ $dropDown       : true;
                   transition-timing-function: ease-in;
           color: #ffffff;
         background-color: $second-color;
-       }}}
+      }&:active{
+        background-color: $second-color;
+      }}}
     @if ($dropDown) {
       .dropdown-menu {
         background-color: $navBgDefault;
@@ -64,7 +69,7 @@ $dropDown       : true;
     .nav-item.active, .nav-item.show {
       .nav-link, .nav-link:hover, .nav-link:focus {
         color: $navHighlight;
-        background-color: $navBgHighlight; }}
+        background-color: $second-color; }}
         .nav-cta{
           background-color: $main-color;
           .nav-link{
