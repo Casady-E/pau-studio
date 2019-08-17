@@ -1,12 +1,6 @@
-$default-font: ('PT Sans', sans-serif, 'PT Sans');
-$heading-font: ('Raleway', sans-serif, 'Raleway');
+$default-font: ('Catamaran', sans-serif, 'Catamaran');
+$second-font: ('Saira Extra Condensed', sans-serif, 'Saira Extra Condensed');
 
 body {
-  font-family: $default-font;
-}
-h1, h2, h3 {
-  font-family: $heading-font;
-}
-p {
   font-family: $default-font;
 }
