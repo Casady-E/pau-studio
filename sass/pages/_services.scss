@@ -4,7 +4,12 @@
     h2{
       font-weight: 700;
       font-size: 3em;
+      margin-bottom: 2.5vh;
+    }
+    p{
+      color: #6b6b6b;
       margin-bottom: 5vh;
+      font-size: 1.5em;
     }
     .service-intro-link {
       font-size: 1.5em;
@@ -28,7 +33,6 @@
       display: -webkit-inline-box;
       display: -ms-inline-flexbox;
       display: inline-flex;
-      background-color: #eaeaea;
       color: #000000;
       height: 100%;
       @include breakpoint(xsmall){
@@ -42,7 +46,8 @@
           padding: 10vh 10vw;
         }
       h3{
-        font-size: 2.5em;
+        font-size: 3em;
+        font-weight: 700;
         color: $main-color;
         @include breakpoint(xsmall){
           margin-top: 5vh;
@@ -56,7 +61,16 @@
         margin-bottom: 2.5vh;
       }
       p{
-        font-size: 1em;
+        font-size: 1.5em;
+      }
+      ul{
+        padding: 0;
+        li{
+          font-size: 1.5em;
+          list-style: none;
+          margin-bottom: 2.5vh;
+          color: #6b6b6b;
+        }
       }
     }
       .service-image{
