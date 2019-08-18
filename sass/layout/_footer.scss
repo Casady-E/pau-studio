@@ -14,8 +14,9 @@
     display: -ms-inline-flexbox;
     display: inline-flex;
     list-style: none;
-    @include breakpoint(small){
+    @include breakpoint(xsmall){
       padding: 0;
+      display: block;
     }
     li{
       padding:1vh;
