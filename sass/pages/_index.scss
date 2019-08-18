@@ -338,23 +338,29 @@
     margin-bottom: 10vh;
     font-size: 2em;
   }}
-
+.icon-container{
+  width: 100%;
+  margin: auto;
+  height: auto;
+}
   .client-icon{
     width: 100%;
-    height: inherit;
+    height: auto;
     margin: auto;
     margin-bottom: 10vh;
     overflow: hidden;
     text-align: center;
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
+    @include breakpoint(small){
+      margin-bottom: 5vh;
+    }
     img{
       filter: gray;
       -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
       filter: grayscale(100%);
       width: 20vw;
       position: absolute;
+      top: 0;
+      left: 0;
       margin: auto;
       @include aspect-ratio(16, 9);
       @include breakpoint(xsmall){
