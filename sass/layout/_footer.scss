@@ -31,8 +31,9 @@
   }
   img{
     max-width: 15vw;
-    @include breakpoint(small){
-      max-width: 25vw;
+    @include breakpoint(xsmall){
+      width: 35vw;
+      max-width: 35vw;
     }
   }
 }
