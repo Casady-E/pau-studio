@@ -43,14 +43,19 @@
   height: auto;
   text-align: center;
   ul{
+    height: auto;
     margin: 0;
     list-style: none;
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
     padding: 0;
+    @include breakpoint(small){
+      display: block;
+    }
     li{
     padding: 0 2.5vw;
+    text-align: center;
     a{
       text-decoration: none;
       color: #ffffff;
