@@ -49,12 +49,18 @@
   padding: 20vh 0;
   background-color: #72519a;
   color: #ffffff;
+  @include breakpoint(xsmall){
+    padding: 10vh 5vw;
+  }
   .intro-about-desc{
     width: 100%;
     margin: auto;
     h2{
       font-size: 2.5em;
       margin-bottom: 5vh;
+      @include breakpoint(xsmall){
+        font-size: 2em;
+      }
     strong{
       font-weight: 700;
       color: #ffe765;
@@ -95,6 +101,9 @@
         position: absolute;
         margin: auto;
         @include aspect-ratio(16, 9);
+        @include breakpoint(xsmall){
+          max-height: 10vh;
+        }
       }
       a{
         color:#ffe765;
