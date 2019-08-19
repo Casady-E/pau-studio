@@ -14,6 +14,8 @@
     display: -ms-inline-flexbox;
     display: inline-flex;
     list-style: none;
+    margin: auto;
+    width: 100%;
     @include breakpoint(xsmall){
       padding: 0;
       display: block;
@@ -52,7 +54,7 @@
     display: -ms-inline-flexbox;
     display: inline-flex;
     padding: 0;
-    @include breakpoint(small){
+    @include breakpoint(xsmall){
       display: block;
     }
     li{
