@@ -7,7 +7,7 @@
     margin-bottom: 5vh;
     text-align: center;
     h2{
-      font-size: 3em;
+      font-size: 4em;
       text-align: center;
       font-weight: 700;
       color: $main-color;
@@ -204,7 +204,7 @@
           }
         }
         }
-      }
+
 .portfolio-drop.show{
     width: 100%;
     margin:auto;
@@ -214,6 +214,25 @@
             transition-duration: 0.25s;
     -webkit-transition-timing-function: ease-in;
             transition-timing-function: ease-in;
-      }
+    overflow: hidden;
     }
+
+    }
+    .card-body{
+      .portfolio-thumb{
+        padding: 0;
+        width: 100%;
+        margin: auto;
+        height: auto;
+        overflow: hidden;
+        border-style: solid;
+        border-color: #d6d6d6;
+        border-width: 1px;
+        img{
+        width: 100%;
+        height: auto;
+      }
+      }
+      }
   }
+}
