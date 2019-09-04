@@ -72,7 +72,12 @@ function topFunction() {
 }
 //Smooth Scrolling
 
-
+$('.portfolio-drop').on('shown.bs.collapse', function(e) {
+  var $panel = $(this).closest('.portfolio-drop');
+  $('html,body').animate({
+    scrollTop: $panel.offset().top
+  }, 500);
+});
 
 // ScrollReveal
 window.sr = ScrollReveal();
