@@ -80,6 +80,15 @@
       img{
         width: auto;
         height: 90vh;
+        @include breakpoint(small){
+          width: 100%;
+          height: auto;
+        }
+        @include breakpoint(xsmall){
+          width: 100%;
+          height: auto;
+          margin: auto;
+        }
       }
     }
     }
