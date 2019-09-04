@@ -163,8 +163,9 @@
       margin-top: 5vh;
       padding: 2.5vh 1vw;
         border-radius: 25px;
-      @include breakpoint(small){
-        margin-top: 2vh
+      @include breakpoint(xsmall){
+        margin: 5vh 10vw;
+        margin-top: 2vh;
       }
     }
     &:hover {
@@ -226,7 +227,7 @@
         margin: auto;
         @include aspect-ratio(16, 9);
         @include breakpoint(xsmall){
-          width: 30vw;
+          width: 40vw;
         }
       }
     }
