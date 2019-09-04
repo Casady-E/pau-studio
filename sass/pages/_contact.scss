@@ -4,6 +4,9 @@
   text-align: center;
   h2{
     font-size: 2.5em;
+    @include breakpoint(xsmall){
+      font-size: 2em;
+    }
     strong{
       font-weight: 700;
       color: $main-color;
