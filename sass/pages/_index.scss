@@ -63,7 +63,7 @@
       }
     strong{
       font-weight: 700;
-      color: #ffe765;
+      color: #ffb665;
     }
     }
     p{
@@ -81,7 +81,7 @@
     height: 100%;
     margin: auto;
     h3{
-      color: #ffe765;
+      color: #ffb665;
       font-weight: 700;
       font-size: 2em;
     }
@@ -92,7 +92,7 @@
       //background-color: #3e3d3d;
       //padding: 2.5vh 2.5vw;
       h3{
-        color: #ffe765;
+        color: #ffb665;
         font-weight: 700;
       }
       img{
@@ -106,7 +106,7 @@
         }
       }
       a{
-        color:#ffe765;
+        color: #ffb665;
         &:hover{
           color: $lighter-color;
           text-decoration: none;
@@ -244,6 +244,100 @@
         margin-top: 2vh
       }
     }
+  }
+}
+
+.fiver-section{
+  width: 100%;
+  margin: auto;
+  background-color: #1dbf73;
+  height: 50vh;
+  @include breakpoint(small){
+    height: 70vh;
+  }
+  &:hover{
+    background-color: #ffffff;
+    a{
+      .fiver-desc{
+        h3{
+          color: #1dbf73;
+        }
+      }
+    }
+  }
+  a{
+    position: relative;
+    padding: 0 10vw;
+    width: 100%;
+    height: 50vh;
+    text-decoration: none;
+    @include breakpoint(xsmall){
+      padding: 15vh 10vw;
+    }
+    .row{
+      height: 100%;
+      margin: auto;
+    }
+    .fiver-desc{
+      margin: auto;
+      height: 100%;
+      padding: 20vh 0vw;
+      @include breakpoint(xsmall){
+        padding: 0;
+      }
+    h3{
+      color: #ffffff;
+      font-weight: 700;
+      font-size: 3em;
+      text-align: left;
+      @include breakpoint(xsmall){
+        text-align: center;
+      }
+    }
+  }
+  .fiver-logo{
+    margin: auto;
+    height: 100%;
+    position: relative;
+    @include breakpoint(xsmall){
+      margin-top: 5vh;
+    }
+    .round-icon{
+      margin: auto;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      z-index: 3;
+      background-color: #1dbf73;
+      border-radius: 50%;
+      height: 40vh;
+      width: 40vh;
+      @include breakpoint(small){
+        right:0;
+      }
+      @include breakpoint(xsmall){
+        max-height: 30vh;
+        max-width: 30vw;
+      }
+    }
+    img{
+      margin: auto;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      z-index: 4;
+      height: auto;
+      max-height: 40vh;
+      @include breakpoint(small){
+        right:0;
+      }
+      @include breakpoint(xsmall){
+        max-height: 30vh;
+      }
+    }
+  }
   }
 }
 
