@@ -252,6 +252,13 @@
   margin: auto;
   background-color: #1dbf73;
   height: 50vh;
+  -webkit-transition-property: -webkit-background-color;
+  transition-property: background-color, -webkit-background-color;
+  -webkit-transition-duration: 0.25s;
+          transition-duration: 0.25s;
+  -webkit-transition-timing-function: ease-in;
+          transition-timing-function: ease-in;
+
   @include breakpoint(small){
     height: 70vh;
   }
