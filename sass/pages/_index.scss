@@ -318,8 +318,8 @@
       z-index: 3;
       background-color: #1dbf73;
       border-radius: 50%;
-      height: 40vh;
-      width: 40vh;
+      height: 300px;
+      width: 300px;
       @include breakpoint(small){
         right:0;
       }
@@ -335,13 +335,12 @@
       left: 0;
       bottom: 0;
       z-index: 4;
-      height: auto;
-      max-height: 40vh;
+      height: 300px;
       @include breakpoint(small){
         right:0;
       }
       @include breakpoint(xsmall){
-        max-height: 30vh;
+        max-height: 250px;
       }
     }
   }
