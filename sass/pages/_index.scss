@@ -324,8 +324,8 @@
         right:0;
       }
       @include breakpoint(xsmall){
-        max-height: 30vh;
-        max-width: 30vw;
+        height: 250px;
+        width: 250px;
       }
     }
     img{
